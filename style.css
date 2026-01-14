@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial;
+}
+.main{
+    background-image:
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)),
+    url("/Website/1.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.logo{
+    color: #ff7200;
+    font-size: 24px;
+    font-weight: bold;
+    /* padding: 1px 20px; */
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar{
+    width: 100%;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px;
+    position: relative; /* IMPORTANT */
+}
+
+.menu{
+    position: absolute;
+    left: 48%;
+    transform: translateX(-50%);
+}
+
+.menu ul{
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu ul li a:hover{
+    color: #ff7200;
+}
+
+a{
+    text-decoration: none;
+}
+.search{
+    display: flex;
+    align-items: center;
+}
+.search input{
+    height: 30px;
+    width: 200px;
+    font-size: 12px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    background: transparent;
+    border: 1px solid #ff7200;
+    color: white;
+    padding: 0 10px;
+}
+.search button{
+    height: 30px;
+    width: 70px;
+    font-size: 12px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    background-color: #ff7200;
+    color: white;
+    cursor: pointer;
+}
+.search input:focus{
+    outline: none;
+}
+.search input::placeholder{
+    color: white;
+    padding: 0 2px;
+}
+.search button:hover{
+    background-color: #e65c00;
+}
+.content{
+    color: white;
+    position: absolute;
+    top: 25%;
+    padding: 10px 40px;
+    font-family: 'Times New Roman';
+}
+.content h1{
+    font-size: 42px;
+}
+.content p{
+    font-size: 18px;
+}
+.content button{
+    height: 30px;
+    width: 120px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff7200;
+    color: black;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.content button:hover{
+    background-color: #e65c00;
+}
+.sup{
+    position: absolute;
+    top: 22%;
+    right: 5%;
+    border: 2px solid black;
+    border-radius: 15px;
+    background-color: black;
+    color: white;
+    height: 380px;
+    width: 250px;
+    /* padding: 50px 50px 50px 50px ; */
+}
+.sup h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ff7200;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border: 1px solid #ff7200;
+    width: 80%;
+    height: 40px;
+    border-radius: 10px;
+    background-color: white;
+}
+.sup form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* gap: 15px; */
+    margin-top: 10px;
+    text-align: center;
+}
+.sup form input{
+  width: 80%;
+  height: 39px;
+  font-size: 14px;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #ff7200;
+  outline: none;
+  color: white;
+}
+.sup form input::placeholder{
+    color: rgb(170, 170, 170);
+    padding: 0 2px;
+}
+.sup form input:hover{
+    border-bottom: 2px solid #ca5202;
+    transition: 0.4s;
+}
+.sup .btn button{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 200px;
+    height: 35px;
+    background-color: #ff7200;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.sup .btn button:hover{
+    background-color:  #ca5202;
+    transition: 0.4s;
+}
+.sup .linkk a{
+    color: #ff7200;
+    text-decoration: none;
+}
+.sup .linkk a:hover{
+    text-decoration: underline;
+}
+.sup .linkk{
+    margin-bottom: 15px;
+}
+.sup .icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.sup .icons a{
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+.sup .icons a:hover{
+    color: #ff7200;
+}
